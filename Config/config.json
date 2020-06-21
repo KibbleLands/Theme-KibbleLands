@@ -1,8 +1,8 @@
 {
-    "name": "Maven",
-    "slug": "Maven",
-    "author": "Orphevs",
-    "version": "1.0.1",
+    "name": "KibbleLands Theme (Based on Maven)",
+    "slug": "KibbleLands",
+    "author": "Fox2Code / Nooffy4Kibbles (Original Author: Orphevs)",
+    "version": "1.0.0",
     "apiID": 0,
     "slider": true,
     "configurations": {
