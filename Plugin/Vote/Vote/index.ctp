@@ -30,14 +30,14 @@
                 <div class="col-xs-12">
                     <div class="col-md-12 well setup-content text-center">
 
-                        <h3>Entrez votre pseudo</h3>
+                        <h3>Enter your nickname</h3>
                         <form data-ajax="true" action="<?= $this->Html->url(['action' => 'setUser']) ?>" method="post" data-callback-function="afterSetUser">
                             <div style="width: 350px;display: inline-block;">
                                 <div class="ajax-msg"></div>
                                 <input type="text" class="form-control" name="username" placeholder="Orphevs" <?= ($user) ? 'value="' . $user['pseudo'] . '" disabled' : '' ?>>
                             </div>
                             <br><br>
-                            <button class="btn btn-success" type="submit">Passer a l'étape suivante</button>
+                            <button class="btn btn-success" type="submit">Proceed to the next step</button>
                         </form>
 
                     </div>

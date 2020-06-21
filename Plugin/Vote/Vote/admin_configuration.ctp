@@ -21,8 +21,8 @@
                                 <input name="global_command" class="form-control" type="text" value="<?= $configuration['global_command'] ?>">
                             <small>
                                 <b>{PLAYER}</b> = Pseudo <br>
-                                <b>{REWARD_NAME}</b> = Nom de la récompense <br>
-                                <b><?= $Lang->get('GLOBAL__EXAMPLE') ?>:</b> <i>say {PLAYER} vient de voter et de recevoir {REWARD_NAME} !</i>
+                                <b>{REWARD_NAME}</b> = Name of award <br>
+                                <b><?= $Lang->get('GLOBAL__EXAMPLE') ?>:</b> <i>say {PLAYER} has just voted and received {REWARD_NAME} !</i>
                             </small>
                         </div>
 

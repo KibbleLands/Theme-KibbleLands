@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="title">Mon profil</h1>
+                <h1 class="title">My Profile</h1>
             </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Détails personnels</h3>
+                        <h3 class="panel-title">Personal Details</h3>
                     </div>
                     <div class="panel-body" style="padding: 30px 20px;">
                         <div class="row">

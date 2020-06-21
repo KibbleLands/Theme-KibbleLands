@@ -20,11 +20,12 @@ if(isset($config['logo']) && $config['logo']) {
             
             <div class="col-md-12">
                 <div class="jumbotron">
-                    <h1>Maven</h1>
-                    <p>Thème conçu par <a href="https://twitter.com/orphevs" target="_blank">Orphevs</a></p>
+                    <h1>KibbleLands (Based on <a href="https://github.com/Fox2Code" target="_blank">Maven</a>)</h1>
+                    <p>Mainteners: <a href="https://github.com/Fox2Code" target="_blank">Fox2Code</a> &  <a href="https://github.com/Nooffy" target="_blank">Nooffy4Kibbles</a> (Original creator <a href="https://twitter.com/orphevs" target="_blank">Orphevs</a>)</p>
                     <br><br>
                     <p>
-                        <a class="btn btn-success" href="https://github.com/MineWeb/Theme-Maven" target="_blank" role="button">GitHub</a>
+                        <a class="btn btn-success" href="https://github.com/KibbleLands/Theme-KibbleLands" target="_blank" role="button">GitHub</a>
+                        <a class="btn btn-success" href="https://github.com/KibbleLands/Theme-KibbleLands/issues/new" target="_blank" role="button">Report an issue</a>
                     </p>
                 </div>
             </div>
@@ -39,187 +40,6 @@ if(isset($config['logo']) && $config['logo']) {
 
             <div class="col-md-8">
                
-               <!-- Features -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Vitrine</h3>
-                    </div>
-                    <div class="panel-body">
-                        <label>Activer la vitrine</label>
-                        <select name="theme-features" class="form-control" style="margin-bottom:20px;">                        
-                            <option value="true"<?= ($config['theme-features'] == "true") ? ' selected' : '' ?>>Oui</option>
-                            <option value="false"<?= ($config['theme-features'] == "false") ? ' selected' : '' ?>>Non</option>
-                        </select>
-                        
-                        <?php if(!isset($theme_config['theme-features']) || $theme_config['theme-features'] == "true") { ?>
-                            <div class="page-header"></div>
-                            <p>Titre de la vitrine N°1</p>
-                            <textarea class="form-control" name="theme-features-title-1" cols="1" rows="1"><?= $config['theme-features-title-1']; ?></textarea>
-                            <br>
-                            <p>Description de la vitrine N°1</p>
-                            <textarea class="form-control" name="theme-features-description-1" cols="1" rows="1"><?= $config['theme-features-description-1']; ?></textarea>
-                            <br>
-                            <p>Image de la vitrine N°1</p>
-                            <textarea class="form-control" name="theme-features-img-1" cols="1" rows="1" placeholder="URL de l'image"><?= $config['theme-features-img-1']; ?></textarea>
-                            <br>
-                            <div class="page-header"></div>
-                            <p>Titre de la vitrine N°2</p>
-                            <textarea class="form-control" name="theme-features-title-2" cols="1" rows="1"><?= $config['theme-features-title-2']; ?></textarea>
-                            <br>
-                            <p>Description de la vitrine N°2</p>
-                            <textarea class="form-control" name="theme-features-description-2" cols="1" rows="1"><?= $config['theme-features-description-2']; ?></textarea>
-                            <br>
-                            <p>Image de la vitrine N°2</p>
-                            <textarea class="form-control" name="theme-features-img-2" cols="1" rows="1" placeholder="URL de l'image"><?= $config['theme-features-img-2']; ?></textarea>
-                            <br>
-                            <div class="page-header"></div>
-                            <p>Titre de la vitrine N°3</p>
-                            <textarea class="form-control" name="theme-features-title-3" cols="1" rows="1"><?= $config['theme-features-title-3']; ?></textarea>
-                            <br>
-                            <p>Description de la vitrine N°3</p>
-                            <textarea class="form-control" name="theme-features-description-3" cols="1" rows="1"><?= $config['theme-features-description-3']; ?></textarea>
-                            <br>
-                            <p>Image de la vitrine N°3</p>
-                            <textarea class="form-control" name="theme-features-img-3" cols="1" rows="1" placeholder="URL de l'image"><?= $config['theme-features-img-3']; ?></textarea>
-                            <br>
-                            <div class="page-header"></div>
-                            <p>Titre de la vitrine N°4</p>
-                            <textarea class="form-control" name="theme-features-title-4" cols="1" rows="1"><?= $config['theme-features-title-4']; ?></textarea>
-                            <br>
-                            <p>Description de la vitrine N°4</p>
-                            <textarea class="form-control" name="theme-features-description-4" cols="1" rows="1"><?= $config['theme-features-description-4']; ?></textarea>
-                            <br>
-                            <p>Image de la vitrine N°4</p>
-                            <textarea class="form-control" name="theme-features-img-4" cols="1" rows="1" placeholder="URL de l'image"><?= $config['theme-features-img-4']; ?></textarea>
-                            <br>
-                        <?php } ?>
-                    </div>
-                </div>
-                <!-- Compteur de joueurs -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Compteur de joueurs</h3>
-                    </div>
-                    <div class="panel-body">
-                        <label>Activer le compteur</label>
-                        <select name="theme-counter" class="form-control" style="margin-bottom:20px;">                        
-                            <option value="true"<?= ($config['theme-counter'] == "true") ? ' selected' : '' ?>>Oui</option>
-                            <option value="false"<?= ($config['theme-counter'] == "false") ? ' selected' : '' ?>>Non</option>
-                        </select>
-
-                        <?php if(!isset($theme_config['theme-counter']) || $theme_config['theme-counter'] == "true") { ?>
-                            <div class="page-header"></div>
-                            <label>Utilisez-vous un launcher ?</label>
-                            <select name="theme-counter-launcher" class="form-control" style="margin-bottom:20px;">                        
-                                <option value="true"<?= ($config['theme-counter-launcher'] == "true") ? ' selected' : '' ?>>Oui</option>
-                                <option value="false"<?= ($config['theme-counter-launcher'] == "false") ? ' selected' : '' ?>>Non</option>
-                            </select>
-                            <?php if(!isset($theme_config['theme-counter-launcher']) || $theme_config['theme-counter-launcher'] == "true") { ?>
-                                <div class="page-header"></div>
-                                <p>URL du launcher</p>
-                                <textarea class="form-control" name="theme-counter-launcher-url" cols="1" rows="1"><?= $config['theme-counter-launcher-url']; ?></textarea>
-                                <br>
-                            <?php } else { ?>
-                                <div class="page-header"></div>
-                                <p>IP du serveur</p>
-                                <textarea class="form-control" name="theme-counter-ip" cols="1" rows="1"><?= $config['theme-counter-ip']; ?></textarea>
-                                <br>
-                            <?php } ?>
-                        <?php } ?>
-                    </div>
-                </div>
-                <!-- Vote -->
-                <?php if($EyPlugin->isInstalled('eywek.vote')){ ?>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Panneau Vote</h3>
-                    </div>
-                    <div class="panel-body">
-                        <label>Activer le panneau Vote</label>
-                        <select name="theme-vote" class="form-control" style="margin-bottom:20px;">                        
-                            <option value="true"<?= ($config['theme-vote'] == "true") ? ' selected' : '' ?>>Oui</option>
-                            <option value="false"<?= ($config['theme-vote'] == "false") ? ' selected' : '' ?>>Non</option>
-                        </select>
-                        <?php if(!isset($theme_config['theme-vote']) || $theme_config['theme-vote'] == "true") { ?>
-                            <div class="page-header"></div>
-                            <p>URL de l'image</p>
-                            <textarea class="form-control" name="theme-vote-img" cols="1" rows="1"><?= $config['theme-vote-img']; ?></textarea>
-                            <br>
-                            <p>Texte du panneau</p>
-                            <textarea class="form-control" name="theme-vote-text" cols="1" rows="3"><?= $config['theme-vote-text']; ?></textarea>
-                            <br>
-                        <?php } ?>
-                    </div>
-                </div>
-                <?php } ?>
-                <!-- Réseaux sociaux -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Réseaux sociaux</h3>
-                    </div>
-                    <div class="panel-body">
-                        <label>Activer les réseaux sociaux</label>
-                        <select name="theme-social" class="form-control" style="margin-bottom:20px;">                        
-                            <option value="true"<?= ($config['theme-social'] == "true") ? ' selected' : '' ?>>Oui</option>
-                            <option value="false"<?= ($config['theme-social'] == "false") ? ' selected' : '' ?>>Non</option>
-                        </select>
-                        <br>
-                        <p>Les réseaux sociaux sont à modifier dans : <a href="<?= $this->Html->url('/') ?>/admin/configuration">Général > Préférences Générales > Préférences sociales</a></p>
-                    </div>
-                </div>
-                <!-- Discord -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Discord</h3>
-                    </div>
-                    <div class="panel-body">
-                        <label>Activer le panneau Discord</label>
-                        <select name="theme-discord" class="form-control" style="margin-bottom:20px;">                        
-                            <option value="true"<?= ($config['theme-discord'] == "true") ? ' selected' : '' ?>>Oui</option>
-                            <option value="false"<?= ($config['theme-discord'] == "false") ? ' selected' : '' ?>>Non</option>
-                        </select>
-                        <?php if(!isset($theme_config['theme-discord']) || $theme_config['theme-discord'] == "true") { ?>
-                            <div class="page-header"></div>
-                            <p>Identifiant du serveur</p>
-                            <textarea class="form-control" name="theme-discord-id" cols="1" rows="1"><?= $config['theme-discord-id']; ?></textarea>
-                            <br>
-                            <p>Pour trouver l'identifiant rendez-vous sur votre Discord : Paramètres du serveur > Widget, activer le Widget et copier l'identifiant de votre serveur.</p>
-                        <?php } ?>
-                    </div>
-                </div>
-                <!-- Infos Footer -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Informations</h3>
-                    </div>
-                    <div class="panel-body">
-                        <label>Activer le panneau Informations</label>
-                        <select name="theme-infos" class="form-control" style="margin-bottom:20px;">                        
-                            <option value="true"<?= ($config['theme-infos'] == "true") ? ' selected' : '' ?>>Oui</option>
-                            <option value="false"<?= ($config['theme-infos'] == "false") ? ' selected' : '' ?>>Non</option>
-                        </select>
-                        <?php if(!isset($theme_config['theme-infos']) || $theme_config['theme-infos'] == "true") { ?>
-                        <div class="page-header"></div>
-                        <p>Texte du panneau Informations</p>
-                        <textarea class="form-control" name="theme-infos-text" cols="1" rows="3"><?= $config['theme-infos-text']; ?></textarea>
-                        <?php } ?>
-                    </div>
-                </div>
-                <!-- Classement Footer -->
-                <?php if($EyPlugin->isInstalled('eywek.vote')){ ?>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Classement voteurs</h3>
-                    </div>
-                    <div class="panel-body">
-                        <label>Activer le classement des voteurs</label>
-                        <select name="theme-ranking" class="form-control" style="margin-bottom:20px;">                        
-                            <option value="true"<?= ($config['theme-ranking'] == "true") ? ' selected' : '' ?>>Oui</option>
-                            <option value="false"<?= ($config['theme-ranking'] == "false") ? ' selected' : '' ?>>Non</option>
-                        </select>
-                    </div>
-                </div>
-                <?php } ?>
                 <!-- KibblesTweaks -->
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -233,6 +53,187 @@ if(isset($config['logo']) && $config['logo']) {
                         </select>
                     </div>
                 </div>
+               <!-- Features -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Showcase</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Activate the showcase</label>
+                        <select name="theme-features" class="form-control" style="margin-bottom:20px;">                        
+                            <option value="true"<?= ($config['theme-features'] == "true") ? ' selected' : '' ?>>Yes</option>
+                            <option value="false"<?= ($config['theme-features'] == "false") ? ' selected' : '' ?>>No</option>
+                        </select>
+                        
+                        <?php if(!isset($theme_config['theme-features']) || $theme_config['theme-features'] == "true") { ?>
+                            <div class="page-header"></div>
+                            <p>Title of showcase N°1</p>
+                            <textarea class="form-control" name="theme-features-title-1" cols="1" rows="1"><?= $config['theme-features-title-1']; ?></textarea>
+                            <br>
+                            <p>Description of showcase N°1</p>
+                            <textarea class="form-control" name="theme-features-description-1" cols="1" rows="1"><?= $config['theme-features-description-1']; ?></textarea>
+                            <br>
+                            <p>Image of showcase N°1</p>
+                            <textarea class="form-control" name="theme-features-img-1" cols="1" rows="1" placeholder="URL de l'image"><?= $config['theme-features-img-1']; ?></textarea>
+                            <br>
+                            <div class="page-header"></div>
+                            <p>Title of showcase N°2</p>
+                            <textarea class="form-control" name="theme-features-title-2" cols="1" rows="1"><?= $config['theme-features-title-2']; ?></textarea>
+                            <br>
+                            <p>Description of showcase N°2</p>
+                            <textarea class="form-control" name="theme-features-description-2" cols="1" rows="1"><?= $config['theme-features-description-2']; ?></textarea>
+                            <br>
+                            <p>Image of showcase N°2</p>
+                            <textarea class="form-control" name="theme-features-img-2" cols="1" rows="1" placeholder="URL de l'image"><?= $config['theme-features-img-2']; ?></textarea>
+                            <br>
+                            <div class="page-header"></div>
+                            <p>Title of showcase N°3</p>
+                            <textarea class="form-control" name="theme-features-title-3" cols="1" rows="1"><?= $config['theme-features-title-3']; ?></textarea>
+                            <br>
+                            <p>Description of showcase N°3</p>
+                            <textarea class="form-control" name="theme-features-description-3" cols="1" rows="1"><?= $config['theme-features-description-3']; ?></textarea>
+                            <br>
+                            <p>Image of showcase N°3</p>
+                            <textarea class="form-control" name="theme-features-img-3" cols="1" rows="1" placeholder="URL de l'image"><?= $config['theme-features-img-3']; ?></textarea>
+                            <br>
+                            <div class="page-header"></div>
+                            <p>Title of showcase N°4</p>
+                            <textarea class="form-control" name="theme-features-title-4" cols="1" rows="1"><?= $config['theme-features-title-4']; ?></textarea>
+                            <br>
+                            <p>Description of showcase N°4</p>
+                            <textarea class="form-control" name="theme-features-description-4" cols="1" rows="1"><?= $config['theme-features-description-4']; ?></textarea>
+                            <br>
+                            <p>Image of showcase N°4</p>
+                            <textarea class="form-control" name="theme-features-img-4" cols="1" rows="1" placeholder="URL de l'image"><?= $config['theme-features-img-4']; ?></textarea>
+                            <br>
+                        <?php } ?>
+                    </div>
+                </div>
+                <!-- Player counter -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Player counter</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Enable the counter</label>
+                        <select name="theme-counter" class="form-control" style="margin-bottom:20px;">                        
+                            <option value="true"<?= ($config['theme-counter'] == "true") ? ' selected' : '' ?>>Yes</option>
+                            <option value="false"<?= ($config['theme-counter'] == "false") ? ' selected' : '' ?>>No</option>
+                        </select>
+
+                        <?php if(!isset($theme_config['theme-counter']) || $theme_config['theme-counter'] == "true") { ?>
+                            <div class="page-header"></div>
+                            <label>Do you use a launcher ?</label>
+                            <select name="theme-counter-launcher" class="form-control" style="margin-bottom:20px;">                        
+                                <option value="true"<?= ($config['theme-counter-launcher'] == "true") ? ' selected' : '' ?>>Yes</option>
+                                <option value="false"<?= ($config['theme-counter-launcher'] == "false") ? ' selected' : '' ?>>No</option>
+                            </select>
+                            <?php if(!isset($theme_config['theme-counter-launcher']) || $theme_config['theme-counter-launcher'] == "true") { ?>
+                                <div class="page-header"></div>
+                                <p>Launcher URL</p>
+                                <textarea class="form-control" name="theme-counter-launcher-url" cols="1" rows="1"><?= $config['theme-counter-launcher-url']; ?></textarea>
+                                <br>
+                            <?php } else { ?>
+                                <div class="page-header"></div>
+                                <p>Serveur IP</p>
+                                <textarea class="form-control" name="theme-counter-ip" cols="1" rows="1"><?= $config['theme-counter-ip']; ?></textarea>
+                                <br>
+                            <?php } ?>
+                        <?php } ?>
+                    </div>
+                </div>
+                <!-- Vote -->
+                <?php if($EyPlugin->isInstalled('eywek.vote')){ ?>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Vote panel</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Enable vote panel</label>
+                        <select name="theme-vote" class="form-control" style="margin-bottom:20px;">                        
+                            <option value="true"<?= ($config['theme-vote'] == "true") ? ' selected' : '' ?>>Yes</option>
+                            <option value="false"<?= ($config['theme-vote'] == "false") ? ' selected' : '' ?>>No</option>
+                        </select>
+                        <?php if(!isset($theme_config['theme-vote']) || $theme_config['theme-vote'] == "true") { ?>
+                            <div class="page-header"></div>
+                            <p>Image URL</p>
+                            <textarea class="form-control" name="theme-vote-img" cols="1" rows="1"><?= $config['theme-vote-img']; ?></textarea>
+                            <br>
+                            <p>Panel Text</p>
+                            <textarea class="form-control" name="theme-vote-text" cols="1" rows="3"><?= $config['theme-vote-text']; ?></textarea>
+                            <br>
+                        <?php } ?>
+                    </div>
+                </div>
+                <?php } ?>
+                <!-- Réseaux sociaux -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Social networks</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Activate social networks</label>
+                        <select name="theme-social" class="form-control" style="margin-bottom:20px;">                        
+                            <option value="true"<?= ($config['theme-social'] == "true") ? ' selected' : '' ?>>Oui</option>
+                            <option value="false"<?= ($config['theme-social'] == "false") ? ' selected' : '' ?>>Non</option>
+                        </select>
+                        <br>
+                        <p>Social networks are to be modified in : <a href="<?= $this->Html->url('/') ?>/admin/configuration">General > General Preferences > Social preferences</a></p>
+                    </div>
+                </div>
+                <!-- Discord -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Discord</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Activate the Discord panel</label>
+                        <select name="theme-discord" class="form-control" style="margin-bottom:20px;">                        
+                            <option value="true"<?= ($config['theme-discord'] == "true") ? ' selected' : '' ?>>Oui</option>
+                            <option value="false"<?= ($config['theme-discord'] == "false") ? ' selected' : '' ?>>Non</option>
+                        </select>
+                        <?php if(!isset($theme_config['theme-discord']) || $theme_config['theme-discord'] == "true") { ?>
+                            <div class="page-header"></div>
+                            <p>Server ID</p>
+                            <textarea class="form-control" name="theme-discord-id" cols="1" rows="1"><?= $config['theme-discord-id']; ?></textarea>
+                            <br>
+                            <p>To find the id go to your Discord: Server Settings > Widget, activate the Widget and copy the id of your server.</p>
+                        <?php } ?>
+                    </div>
+                </div>
+                <!-- Infos Footer -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Information</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Activate the Information panel</label>
+                        <select name="theme-infos" class="form-control" style="margin-bottom:20px;">                        
+                            <option value="true"<?= ($config['theme-infos'] == "true") ? ' selected' : '' ?>>Yes</option>
+                            <option value="false"<?= ($config['theme-infos'] == "false") ? ' selected' : '' ?>>No</option>
+                        </select>
+                        <?php if(!isset($theme_config['theme-infos']) || $theme_config['theme-infos'] == "true") { ?>
+                        <div class="page-header"></div>
+                        <p>Information panel text</p>
+                        <textarea class="form-control" name="theme-infos-text" cols="1" rows="3"><?= $config['theme-infos-text']; ?></textarea>
+                        <?php } ?>
+                    </div>
+                </div>
+                <!-- Classement Footer -->
+                <?php if($EyPlugin->isInstalled('eywek.vote')){ ?>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Voter Ranking</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Activate voters ranking</label>
+                        <select name="theme-ranking" class="form-control" style="margin-bottom:20px;">                        
+                            <option value="true"<?= ($config['theme-ranking'] == "true") ? ' selected' : '' ?>>Yes</option>
+                            <option value="false"<?= ($config['theme-ranking'] == "false") ? ' selected' : '' ?>>No</option>
+                        </select>
+                    </div>
+                </div>
+                <?php } ?>
             </div>
 
             <div class="col-md-12">

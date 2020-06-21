@@ -1,5 +1,5 @@
 <section class="news col-md-8">
-    <h1 class="news-title">Dernières actualités</h1>
+    <h1 class="news-title">Latest News</h1>
     
     <?php if(!empty($search_news)) { ?>
     <?php foreach ($search_news as $k => $v) { ?>
