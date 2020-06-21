@@ -24,9 +24,9 @@
     <?= $this->Html->css('modern-business.css') ?>
     <?= $this->Html->css('animate.css') ?>
     <?= $this->Html->css('font-awesome.min.css') ?>
-	  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	  <?= $this->Html->script('jquery-1.11.0.js') ?>
     <?= $this->Html->script('easy_paginate.js') ?>
     
