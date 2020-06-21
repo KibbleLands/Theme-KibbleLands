@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Orphevs">
+    <meta name="referrer" content="strict-origin">
 
     <title><?= $title_for_layout; ?> - <?= $website_name ?></title>
 
