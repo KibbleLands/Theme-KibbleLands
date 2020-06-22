@@ -3,14 +3,14 @@
         <div class="pre-footer row">
             <?php if(!isset($theme_config['theme-infos']) || $theme_config['theme-infos'] == "true") { ?>
             <div class="informations col-md-3">
-                <h3>Informations</h3>
+                <h3>Information</h3>
                 <p><?= $theme_config['theme-infos-text']; ?></p>
             </div>
             <?php } ?>
             <?php if($EyPlugin->isInstalled('eywek.vote')) { ?>
             <?php if(!isset($theme_config['theme-ranking']) || $theme_config['theme-ranking'] == "true") { ?>
             <div class="classement offset-md-1 col-md-8">
-                <h3>Nos meilleurs joueurs</h3>
+                <h3>Our best players</h3>
                 <?php $users_vote = ClassRegistry::init('Vote.Vote')->find('all', [
                     'fields' => ['username', 'COUNT(id) AS count'],
                     'conditions' => ['created LIKE' => date('Y') . '-' . date('m') . '-%'],

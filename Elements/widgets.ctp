@@ -4,7 +4,7 @@
     <div class="player-counter">
         <?php if(!isset($theme_config['theme-counter-launcher']) || $theme_config['theme-counter-launcher'] == "true") { ?>
         <h3><?= ($banner_server) ? $banner_server : $Lang->get('SERVER__STATUS_OFF') ?></h3>
-        <a href="<?= $theme_config['theme-counter-launcher-url']; ?>" class="btn-theme">Rejoignez-nous</a>
+        <a href="<?= $theme_config['theme-counter-launcher-url']; ?>" class="btn-theme">Join us</a>
         <?php } else { ?>
         <h3><?= ($banner_server) ? $banner_server : $Lang->get('SERVER__STATUS_OFF') ?></h3>
         <a class="btn-theme copy" data-toggle="tooltip" data-placement="bottom" title="IP Copiée !" data-trigger="click focus" data-clipboard-text="<?= $theme_config['theme-counter-ip']; ?>">Rejoignez-nous</a>
@@ -26,7 +26,7 @@
         <?php if(isset($theme_config['theme-vote-text']) && $theme_config['theme-vote-text']) { ?>
             <h3><?= $theme_config['theme-vote-text']; ?></h3>
         <?php } else { ?>
-            <h3>Votez pour <span class="blue"><?= $website_name ?></span> et gagnez des <span class="blue">récompenses.</span></h3>
+            <h3>Vote for <span class="blue"><?= $website_name ?></span> and earn <span class="blue">rewards.</span></h3>
         <?php } ?>
         <a href="<?= $this->Html->url('/') ?>vote" class="btn-theme">Voter</a>
     </div>
@@ -35,7 +35,7 @@
     <?php // Réseaux sociaux ?>
     <?php if(!isset($theme_config['theme-social']) || $theme_config['theme-social'] == "true") { ?>
     <div class="socials container-theme">
-        <h3>Nos réseaux sociaux</h3>
+        <h3>Our social networks</h3>
         <ul>            
             <?php
             if(!empty($skype_link)) {
@@ -67,7 +67,7 @@
     <?php // Discord ?>
     <?php if(!isset($theme_config['theme-discord']) || $theme_config['theme-discord'] == "true") { ?>
     <div class="discord container-theme">
-        <h3>Rejoignez-nous sur Discord</h3>
+        <h3>Join us on Discord</h3>
         <?php if(isset($theme_config['theme-discord-id']) && $theme_config['theme-discord-id']) { ?>
             <iframe src="https://discordapp.com/widget?id=<?= $theme_config['theme-discord-id']; ?>&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
         <?php } else { ?>
