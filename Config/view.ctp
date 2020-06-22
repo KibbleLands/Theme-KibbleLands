@@ -54,8 +54,10 @@ if(isset($config['logo']) && $config['logo']) {
                         </select>
                         <div class="page-header"></div>
                         <label>Particles</label>
-                        <select name="theme-scrollbar" class="form-control" style="margin-bottom:20px;">                        
+                        <select name="theme-particles" class="form-control" style="margin-bottom:20px;">                        
                             <option value="disabled"<?= ($config['theme-particles'] == "disabled") ? ' selected' : '' ?>>Disabled</option>
+                            <option value="modern"<?= ($config['theme-particles'] == "modern") ? ' selected' : '' ?>>Modern</option>
+                            <option value="snow"<?= ($config['theme-particles'] == "snow") ? ' selected' : '' ?>>Snow</option>
                             <option value="diamonds"<?= ($config['theme-particles'] == "diamonds") ? ' selected' : '' ?>>Diamonds</option>
                             <option value="kibbles"<?= ($config['theme-particles'] == "kibbles") ? ' selected' : '' ?>>Kibbles</option>
                         </select>
