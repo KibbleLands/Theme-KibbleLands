@@ -43,13 +43,14 @@ if(isset($config['logo']) && $config['logo']) {
                 <!-- KibblesTweaks -->
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">KibblesTweaks</h3>
+                        <h3 class="panel-title">Interface</h3>
                     </div>
                     <div class="panel-body">
-                        <label>Disable scrollbars</label>
-                        <select name="theme-scrollbar-disable" class="form-control" style="margin-bottom:20px;">                        
-                            <option value="true"<?= ($config['theme-scrollbar-disable'] == "true") ? ' selected' : '' ?>>True</option>
-                            <option value="false"<?= ($config['theme-scrollbar-disable'] == "false") ? ' selected' : '' ?>>False</option>
+                        <label>Scrollbars</label>
+                        <select name="theme-scrollbar" class="form-control" style="margin-bottom:20px;">                        
+                            <option value="normal"<?= ($config['theme-scrollbar'] == "normal") ? ' selected' : '' ?>>Normal</option>
+                            <option value="small"<?= ($config['theme-scrollbar'] == "small") ? ' selected' : '' ?>>Small</option>
+                            <option value="disabled"<?= ($config['theme-scrollbar'] == "disabled") ? ' selected' : '' ?>>Disabled</option>
                         </select>
                     </div>
                 </div>

@@ -6,4 +6,4 @@ Theme for https://www.kibblelands.net/
 
 - English translated
 - Privacy & Security improvement
-- Better disablable scrollbars
+- Better customizable scrollbars

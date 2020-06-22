@@ -32,7 +32,7 @@
         "theme-infos": "true",
         "theme-infos-text": "Lorem ipsum dolor sit amet\r\n<br><br>\r\nSed faucibus aliquam ex non malesuada. Nam dignissim urna vel placerat volutpat.",
         "theme-ranking": "true",
-        "theme-scrollbar-disable": false,
+        "theme-scrollbar": "normal",
         "logo": false
     },
     "supported": {

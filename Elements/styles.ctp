@@ -6,7 +6,7 @@
     */
 ?>
 
-<?php if(isset($theme_config['theme-scrollbar-disable']) && $theme_config['theme-scrollbar-disable']) { ?>
+<?php if($theme_config['theme-scrollbar'] == "disabled") { ?>
 <style>
 <?php /* Firefox */ ?>
 :root { scrollbar-width: none; }
@@ -15,18 +15,22 @@
 </style>
 <?php } else { ?>
 <style>
+<?php if($theme_config['theme-scrollbar'] == "small") { ?>
+<?php /* Firefox */ ?>
+:root { scrollbar-width: thin; }
+<?php /* Chromium based browsers (Chrome / Brave / Vivaldi) */ ?>
+::-webkit-scrollbar { width: 0.5em; }
+<?php } else { ?>
+<?php /* Firefox */ ?>
+:root { scrollbar-width: auto; }
+<?php /* Chromium based browsers (Chrome / Brave / Vivaldi) */ ?>
+::-webkit-scrollbar { width: 1em; }
+<?php } ?>
 <?php /* Firefox */ ?>
 :root { scrollbar-color: #2b46ed #333333; }
 <?php /* Chromium based browsers (Chrome / Brave / Vivaldi) */ ?>
-::-webkit-scrollbar {
-  width: 1em;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #2b46ed;
-}
-::-webkit-scrollbar-track { 
-    background-color: #333333;
-}
+::-webkit-scrollbar-thumb { background-color: #2b46ed; }
+::-webkit-scrollbar-track { background-color: #333333; }
 </style>
 <?php } ?>
 
