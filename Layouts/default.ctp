@@ -54,8 +54,8 @@
 
 </head>
 
-<body id="page-root">
-
+<body>
+    <div id="particle-screen" style="position: fixed; top: 0; left: 0; width: 100%; width: 100%; z-index: -1;"></div>
    
     <?= $this->element('body') ?>
 

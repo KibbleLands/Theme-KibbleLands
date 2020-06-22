@@ -15,7 +15,7 @@
     $( document ).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
         <?php if (isset($theme_config['theme-particles']) && $theme_config['theme-particles'] != "disabled") { ?>
-            particlesJS.load('page-root', 'theme/<?= $this->theme; ?>/json/<?= $theme_config['theme-particles']; ?>.json', function() {
+            particlesJS.load('particle-screen', 'theme/<?= $this->theme; ?>/json/<?= $theme_config['theme-particles']; ?>.json', function() {
                 console.log('particles.js config loaded :3');
             });
         <?php } ?>
