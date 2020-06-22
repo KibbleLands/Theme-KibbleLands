@@ -33,6 +33,9 @@
         "theme-infos-text": "Lorem ipsum dolor sit amet\r\n<br><br>\r\nSed faucibus aliquam ex non malesuada. Nam dignissim urna vel placerat volutpat.",
         "theme-ranking": "true",
         "theme-scrollbar": "normal",
+        "seo-noindex": "false",
+        "seo-description": "Awesome Minecraft server!",
+        "seo-tags": "Minecraft, Minecraft Server",
         "logo": false
     },
     "supported": {

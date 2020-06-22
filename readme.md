@@ -7,3 +7,4 @@ Theme for https://www.kibblelands.net/
 - English translated
 - Privacy & Security improvement
 - Better customizable scrollbars
+- SEO Configuration

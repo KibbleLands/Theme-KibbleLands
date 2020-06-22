@@ -15,7 +15,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <?php if(isset($theme_config['seo-noindex']) && $theme_config['seo-noindex']) { ?>
+    <meta name="robots" content="noindex">
+    <?php } ?>
+    <meta name="description" content="<?= isset($theme_config['seo-description']) ? 
+    str_replace($theme_config['seo-description'],"\"","&quot;") : "Awesome Minecraft server!" ?>">
+    <meta name="keywords" content="<?= isset($theme_config['seo-tags']) ? 
+    str_replace($theme_config['seo-tags'],"\"","&quot;") : "Minecraft, Minecraft Server" ?>">
     <meta name="author" content="Orphevs">
     <meta name="referrer" content="strict-origin">
 

@@ -235,6 +235,25 @@ if(isset($config['logo']) && $config['logo']) {
                     </div>
                 </div>
                 <?php } ?>
+                <!-- SEO -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">SEO</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Disable indexation (Hide your website from search results)</label>
+                        <select name="theme-infos" class="form-control" style="margin-bottom:20px;">                        
+                            <option value="true"<?= ($config['seo-noindex'] == "true") ? ' selected' : '' ?>>Yes</option>
+                            <option value="false"<?= ($config['seo-noindex'] == "false") ? ' selected' : '' ?>>No</option>
+                        </select>
+                        <div class="page-header"></div>
+                        <p>Website description (Visible on search engines)</p>
+                        <textarea class="form-control" name="seo-description" cols="1" rows="3"><?= isset($theme_config['seo-description']) ? $config['seo-description'] : "Awesome Minecraft server!" ?></textarea>
+                        <div class="page-header"></div>
+                        <p>Search Tags (Putting too many tags might degrade your SEO)</p>
+                        <textarea class="form-control" name="seo-tags" cols="1" rows="3"><?= isset($theme_config['seo-tags']) ? $config['seo-tags'] : "Minecraft, Minecraft Server" ?></textarea>
+                    </div>
+                </div>
             </div>
 
             <div class="col-md-12">
