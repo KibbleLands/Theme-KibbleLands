@@ -69,9 +69,9 @@
     <div class="discord container-theme">
         <h3>Join us on Discord</h3>
         <?php if(isset($theme_config['theme-discord-id']) && $theme_config['theme-discord-id']) { ?>
-            <iframe src="https://discordapp.com/widget?id=<?= $theme_config['theme-discord-id']; ?>&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+            <iframe src="https://discordapp.com/widget?id=<?= $theme_config['theme-discord-id']; ?>&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" referrerpolicy="no-referrer"></iframe>
         <?php } else { ?>
-            <iframe src="https://discordapp.com/widget?id=316532971903385601&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+            <iframe src="https://discordapp.com/widget?id=316532971903385601&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" referrerpolicy="no-referrer"></iframe>
         <?php } ?>
     </div>
     <?php } ?>
