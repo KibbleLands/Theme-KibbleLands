@@ -67,7 +67,7 @@
                                         echo '</div>';
                                         echo '<div class="panel-body">';
                                             foreach ($websites as $website) {
-                                                echo '<a data-website-id="' . $website['Website']['id'] . '" href="' . $website['Website']['url'] . '" target="_blank" class="btn btn-block btn-success website">' . $website['Website']['name'] . '</a>';
+                                                echo '<a data-website-id="' . $website['Website']['id'] . '" href="' . $website['Website']['url'] . '" target="_blank" class="btn btn-block btn-success website" rel="noopener">' . $website['Website']['name'] . '</a>';
                                             }
                                         echo '</div>';
                                     echo '</div>';

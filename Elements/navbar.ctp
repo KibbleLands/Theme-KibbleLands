@@ -20,13 +20,13 @@
                         <?php 
                             if(empty($value['Navbar']['submenu'])) { ?>
                             <li class="li-nav<?php if($i < $count2) { echo ' pull-left'; } elseif($i >= $count2) { echo ' pull-right'; } ?><?php if($this->params['controller'] == $value['Navbar']['name']) { ?> actived<?php } ?>">
-                                <a href="<?= $value['Navbar']['url'] ?>"<?= ($value['Navbar']['open_new_tab']) ? ' target="_blank"' : '' ?> data-name="<?= $value['Navbar']['name'] ?>">
+                                <a href="<?= $value['Navbar']['url'] ?>"<?= ($value['Navbar']['open_new_tab']) ? ' target="_blank"' : '' ?> data-name="<?= $value['Navbar']['name'] ?>" rel="noopener">
                                     <?= $value['Navbar']['name'] ?>
                                 </a>
                             </li>
                         <?php } else { ?>
                         <li class="dropdown<?php if($i < $count2) { echo ' pull-left'; } elseif($i >= $count2) { echo ' pull-right'; } ?> <?php if($this->params['controller'] == $value['Navbar']['name']) { ?>actived<?php } ?>">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" data-name="<?= $value['Navbar']['name'] ?>">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" data-name="<?= $value['Navbar']['name'] ?>" rel="noopener">
                                     <?= $value['Navbar']['name'] ?>
                                     <span class="caret"></span>
                                 </a>
@@ -36,7 +36,7 @@
                                         foreach ($submenu as $k => $v) {
                                     ?>
                                         <li>
-                                            <a href="<?= rawurldecode($v) ?>"<?= ($value['Navbar']['open_new_tab']) ? ' target="_blank"' : '' ?>>
+                                            <a href="<?= rawurldecode($v) ?>"<?= ($value['Navbar']['open_new_tab']) ? ' target="_blank"' : '' ?> rel="noopener">
                                                 <?= rawurldecode(str_replace('+', ' ', $k)) ?>
                                             </a>
                                         </li>
@@ -122,7 +122,7 @@
         foreach ($nav as $key => $value) { ?>
             <?php if(empty($value['Navbar']['submenu'])) { ?>
             <li class="li-nav<?php if($this->params['controller'] == $value['Navbar']['name']) { ?>actived<?php } ?>">
-                <a href="<?= $value['Navbar']['url'] ?>"<?= ($value['Navbar']['open_new_tab']) ? ' target="_blank"' : '' ?>><?= $value['Navbar']['name'] ?></a>
+                <a href="<?= $value['Navbar']['url'] ?>"<?= ($value['Navbar']['open_new_tab']) ? ' target="_blank"' : '' ?> rel="noopener"><?= $value['Navbar']['name'] ?></a>
             </li>
             <?php } else { ?>
             <li class="li-nav dropdown">
@@ -133,7 +133,7 @@
                     <?php $submenu = json_decode($value['Navbar']['submenu']);
                           foreach ($submenu as $k => $v) { ?>
                     <li>
-                        <a href="<?= rawurldecode($v) ?>"<?= ($value['Navbar']['open_new_tab']) ? ' target="_blank"' : '' ?>><i class="fa fa-angle-right"></i> <?= rawurldecode(str_replace('+', ' ', $k)) ?></a>
+                        <a href="<?= rawurldecode($v) ?>"<?= ($value['Navbar']['open_new_tab']) ? ' target="_blank"' : '' ?> rel="noopener"><i class="fa fa-angle-right"></i> <?= rawurldecode(str_replace('+', ' ', $k)) ?></a>
                     </li>
                     <?php } ?>
                 </ul>
