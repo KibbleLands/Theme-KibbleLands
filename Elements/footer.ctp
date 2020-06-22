@@ -3,7 +3,7 @@
         <div class="pre-footer row">
             <?php if(!isset($theme_config['theme-infos']) || $theme_config['theme-infos'] == "true") { ?>
             <div class="informations col-md-3">
-                <h3>Information</h3>
+                <h3><?= $Lang->get('GLOBAL__INFORMATIONS') ?></h3>
                 <p><?= $theme_config['theme-infos-text']; ?></p>
             </div>
             <?php } ?>

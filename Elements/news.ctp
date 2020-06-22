@@ -1,10 +1,10 @@
 <section class="news col-md-8">
-    <h1 class="news-title">Latest News</h1>
+    <h1 class="news-title"><?= $Lang->get('NEWS__LAST_TITLE') ?></h1>
     
     <?php if(!empty($search_news)) { ?>
     <?php foreach ($search_news as $k => $v) { ?>
     <div class="news-u container-theme">
-        <span class="date">Published on <?= $v['News']['created'] ?></span>
+        <span class="date"><?= $Lang->get('NEWS__POSTED_ON') ?> <?= $v['News']['created'] ?></span>
         <h3><?= cut($v['News']['title'], 60, array('ellipsis' => '...', 'html' => true)) ?></h3>
         <p><?= $this->Text->truncate($v['News']['content'], 320, array('ellipsis' => '...', 'html' => true)) ?></p>
         <div class="news-actions">

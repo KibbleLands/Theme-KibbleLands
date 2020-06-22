@@ -7,7 +7,7 @@
         <a href="<?= $theme_config['theme-counter-launcher-url']; ?>" class="btn-theme">Join us</a>
         <?php } else { ?>
         <h3><?= ($banner_server) ? $banner_server : $Lang->get('SERVER__STATUS_OFF') ?></h3>
-        <a class="btn-theme copy" data-toggle="tooltip" data-placement="bottom" title="IP Copied!" data-trigger="click focus" data-clipboard-text="<?= $theme_config['theme-counter-ip']; ?>">Join us</a>
+        <a class="btn-theme copy" data-toggle="tooltip" data-placement="bottom" title="IP Copied!" data-trigger="click focus" data-clipboard-text="<?= $theme_config['theme-counter-ip']; ?>"><?= $Lang->get('GLOBAL__JOIN_US') ?></a>
         <?php } ?>
     </div>
     <?php } ?>
@@ -35,7 +35,7 @@
     <?php // Réseaux sociaux ?>
     <?php if(!isset($theme_config['theme-social']) || $theme_config['theme-social'] == "true") { ?>
     <div class="socials container-theme">
-        <h3>Our social networks</h3>
+        <h3><?= $Lang->get('GLOBAL__JOIN_US_SOCIAL') ?></h3>
         <ul>            
             <?php
             if(!empty($skype_link)) {

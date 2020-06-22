@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="title">My Profile</h1>
+                <h1 class="title"><?= $Lang->get('USER__PROFILE') ?></h1>
             </div>
         </div>
     </div>

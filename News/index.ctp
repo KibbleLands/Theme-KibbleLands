@@ -10,7 +10,7 @@
             </div>
             <br>
             <span class="created">
-        Written on 
+        <?= $Lang->get('NEWS__POSTED_ON') ?> 
         <?= $Lang->date($news['News']['created']); ?>
       </span>
             <span class="author">
@@ -46,7 +46,7 @@
             <div class="comment-body col-md-10">
                 <?= before_display($v['content']) ?>
                     <h4 class="created">
-                        Written on <?= $Lang->date($v['created']); ?>
+                        <?= $Lang->get('NEWS__POSTED_ON') ?> <?= $Lang->date($v['created']); ?>
                     </h4>
                     <div class="comment-controls">
                         <?php if($Permissions->can('DELETE_COMMENT') OR $Permissions->can('DELETE_HIS_COMMENT') AND $user['pseudo'] == $v['Comment']['author']) { ?>
