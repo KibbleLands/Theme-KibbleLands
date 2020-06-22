@@ -52,6 +52,13 @@ if(isset($config['logo']) && $config['logo']) {
                             <option value="small"<?= ($config['theme-scrollbar'] == "small") ? ' selected' : '' ?>>Small</option>
                             <option value="disabled"<?= ($config['theme-scrollbar'] == "disabled") ? ' selected' : '' ?>>Disabled</option>
                         </select>
+                        <div class="page-header"></div>
+                        <label>Particles</label>
+                        <select name="theme-scrollbar" class="form-control" style="margin-bottom:20px;">                        
+                            <option value="disabled"<?= ($config['theme-particles'] == "disabled") ? ' selected' : '' ?>>Disabled</option>
+                            <option value="diamonds"<?= ($config['theme-particles'] == "diamonds") ? ' selected' : '' ?>>Diamonds</option>
+                            <option value="kibbles"<?= ($config['theme-particles'] == "kibbles") ? ' selected' : '' ?>>Kibbles</option>
+                        </select>
                     </div>
                 </div>
                <!-- Features -->

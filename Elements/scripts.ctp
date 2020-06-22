@@ -8,9 +8,17 @@
 
 <?= $this->Html->script('main.js') ?>
 <?= $this->Html->script('clipboard.min.js') ?>
+<?php if (isset($theme_config['theme-particles']) && $theme_config['theme-particles'] != "disabled") { ?>
+<?= $this->Html->script('particles.min.js') ?>
+<?php } ?>
 <script>
     $( document ).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
+        <?php if (isset($theme_config['theme-particles']) && $theme_config['theme-particles'] != "disabled") { ?>
+            particlesJS.load('page-root', 'theme/<?= $this->theme; ?>/json/<?= $theme_config['theme-particles']; ?>.json', function() {
+                console.log('particles.js config loaded :3');
+            });
+        <?php } ?>
     });
 </script>
 

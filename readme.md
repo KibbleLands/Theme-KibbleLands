@@ -8,6 +8,7 @@ Theme for https://www.kibblelands.net/
 - Privacy & Security improvement
 - Better customizable scrollbars
 - SEO Configuration
+- Configurable Particles
 
 ## Installation
 
