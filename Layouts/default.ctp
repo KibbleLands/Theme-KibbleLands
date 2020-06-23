@@ -19,9 +19,9 @@
     <meta name="robots" content="noindex">
     <?php } ?>
     <meta name="description" content="<?= isset($theme_config['seo-description']) ? 
-    str_replace($theme_config['seo-description'],"\"","&quot;") : "Awesome Minecraft server!" ?>">
+    str_replace("\"","&quot;",$theme_config['seo-description']) : "Awesome Minecraft server!" ?>">
     <meta name="keywords" content="<?= isset($theme_config['seo-tags']) ? 
-    str_replace($theme_config['seo-tags'],"\"","&quot;") : "Minecraft, Minecraft Server" ?>">
+    str_replace("\"","&quot;",$theme_config['seo-tags']) : "Minecraft, Minecraft Server" ?>">
     <meta name="author" content="Orphevs">
     <meta name="referrer" content="strict-origin">
 
