@@ -18,3 +18,6 @@ To install this theme you need to :
 - Rename the **"Theme-KibbleLands-master"** folder to **"KibbleLands"**.
 - Move the **"KibbleLands"** download folder to: `app\View\Themed\`
 - Enable the theme from the Administrator Panel (Others > Themes)
+
+## You want to support us join us on discord 
+https://discord.gg/bJ2uF8T
