@@ -1,6 +1,7 @@
 # KibbleLands Theme (Based on [Maven](https://github.com/MineWeb/Theme-Maven))
 
-Theme for https://www.kibblelands.net/
+Theme for https://www.kibblelands.net/  
+You can join us on our [Discord](https://discord.gg/bJ2uF8T)
 
 ## New features (In addition of all features from [Maven](https://github.com/MineWeb/Theme-Maven))
 
@@ -18,6 +19,3 @@ To install this theme you need to :
 - Rename the **"Theme-KibbleLands-master"** folder to **"KibbleLands"**.
 - Move the **"KibbleLands"** download folder to: `app\View\Themed\`
 - Enable the theme from the Administrator Panel (Others > Themes)
-
-## You want to support us join us on discord 
-https://discord.gg/bJ2uF8T
